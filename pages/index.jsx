@@ -3,6 +3,11 @@ import BackgroundImageWithChildren from "../src/components/layouts/backgroundIma
 
 const StyledDiv = styled.div`
     background-color: ${({theme}) => theme.colors.white};
+    min-width: 500px;
+
+    @media (max-width: 500px) {
+        min-width:100%;
+    }
 `
 
 export default function Homepage() {
