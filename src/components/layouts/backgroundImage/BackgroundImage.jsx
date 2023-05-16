@@ -13,7 +13,7 @@ const StyledImage = styled.div`
     min-height: 100vh;
 `
 
-function BackgroundImageWithChildren({children, image}) {
+function BackgroundImage({children, image}) {
     return (
         <StyledFlex>
             {children}
@@ -22,8 +22,8 @@ function BackgroundImageWithChildren({children, image}) {
     )
 }
 
-BackgroundImageWithChildren.defaultProps = {
+BackgroundImage.defaultProps = {
     image: '/background.png'
 }
 
-export default BackgroundImageWithChildren
+export default BackgroundImage

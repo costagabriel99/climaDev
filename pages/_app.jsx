@@ -6,7 +6,12 @@ const GlobalStyle = createGlobalStyle`
       padding: 0;
       margin: 0;
       background-color: ${ ({theme}) => theme.colors.white};
+      font-family: sans-serif;
     }
+
+    *{   
+       box-sizing: border-box;
+      }
   `
 
 
