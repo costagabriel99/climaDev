@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import BackgroundImage from "../src/components/layouts/backgroundImage/BackgroundImage"
 import Logo from "../src/components/logo/Logo"
+import Input from "../src/components/form/input/Input"
 
 const StyledDiv = styled.div`
     background-color: ${({theme}) => theme.colors.white};
@@ -15,20 +16,12 @@ const StyledDiv = styled.div`
     }
 `
 
-const StyledInput = styled.input`
-    padding: 10px 20px;
-    background-color: ${props => props.theme.colors.grey};
-    border: none;
-    border-radius: 5px;
-
-`
-
 export default function Homepage() {
     return (
         <BackgroundImage>
             <StyledDiv>
                 <Logo showImage type='vertical'/>
-                <StyledInput />
+                <Input placeholder="Digite o nome da cidade"/>
             </StyledDiv>
         </BackgroundImage>
 
