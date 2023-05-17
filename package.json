@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,13 @@
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.5"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^5.0.0-canary-d7a98a5e9-20230517"
+  }
 }

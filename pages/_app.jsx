@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     html, body {
       padding: 0;
       margin: 0;
-      background-color: ${ ({theme}) => theme.colors.white};
+      background-color: ${({ theme }) => theme.colors.white};
       font-family: sans-serif;
     }
 
@@ -14,17 +14,11 @@ const GlobalStyle = createGlobalStyle`
       }
   `
 
-
 export default function MyApp({ Component, pageProps }) {
-    return (
+  return (
     <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Component {...pageProps} />
+      <GlobalStyle />
+      <Component {...pageProps} />
     </ThemeProvider>
-
-    )
-  }
-
-
-
-  
+  )
+}
