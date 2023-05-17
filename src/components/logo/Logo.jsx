@@ -10,6 +10,11 @@ const VerticalH1 = styled.h1`
   margin-top: -80px;
 `
 
+const HorizontalH1 = styled.h1`
+  font-size: 40px;
+  color: ${({ theme }) => theme.colors.black};
+`
+
 const PrimaryColor = styled.span`
   color: ${({ theme }) => theme.colors.primary};
 `
@@ -23,6 +28,15 @@ export default function Logo({ showImage, type }) {
           Clima <br /> <PrimaryColor>DEV</PrimaryColor>
         </VerticalH1>
       )}
+      {type === 'horizontal' && (
+        <HorizontalH1>
+          Clima<PrimaryColor>DEV</PrimaryColor>
+        </HorizontalH1>
+      )}
     </div>
   )
+}
+
+Logo.defaultProps = {
+  type: 'horizontal'
 }
