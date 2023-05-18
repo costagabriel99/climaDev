@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       background-color: ${({ theme }) => theme.colors.white};
       font-family: sans-serif;
-      color: ${props => props.theme.colors.black}
+      color: ${(props) => props.theme.colors.black}
     }
 
     *{   
