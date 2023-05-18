@@ -13,7 +13,7 @@ export default function SearchCity() {
     if (!city) return
     const cities_limit = 5
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${cities_limit}&appid=${process.env.NEXT_PUBLIC_OWM_KEY}`
+      `/api/openweathermap?url=geo/1.0/direct?q=${city}&limit=${cities_limit}`
     )
     const json = await response.json()
     handleList(json)
