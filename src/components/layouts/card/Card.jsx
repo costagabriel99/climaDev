@@ -6,6 +6,7 @@ const StyledClimaCard = styled.div`
   border-radius: 10px;
   width: 300px;
   padding: 15px;
+  box-sizing: border-box;
 `
 
 const Title = styled.h6`

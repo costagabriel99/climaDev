@@ -6,6 +6,7 @@ import moment from 'moment'
 import Navbar from '../../../src/components/layouts/navbar/Navbar'
 import Container from '../../../src/components/layouts/container/Container'
 import ClimaCard from '../../../src/components/layouts/card/Card'
+import Footer from '../../../src/components/layouts/footer/Footer'
 
 const CardContainer = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ const CardContainer = styled.div`
 
 const Body = styled.div`
   background-color: ${(props) => props.theme.colors.bggrey};
-  min-height: 100vh;
+  min-height: calc(100vh -200px);
 `
 const Content = styled.div`
   padding: 80px 0;
@@ -109,6 +110,7 @@ export default function InfoPage() {
           </CardContainer>
         </Container>
       </Body>
+      <Footer />
     </>
   )
 }

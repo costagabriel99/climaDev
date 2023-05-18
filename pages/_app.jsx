@@ -16,6 +16,13 @@ const GlobalStyle = createGlobalStyle`
 
     *{   
        box-sizing: border-box;
+    }
+
+    a {
+    color: ${(props) => props.theme.colors.primary};
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s
       }
   `
 
