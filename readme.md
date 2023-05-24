@@ -14,6 +14,8 @@ Este projeto é uma aplicação web de clima que permite aos usuários verificar
 - React.js
 - Next.js
 - API do OpenWeatherMap
+- Moment
+- Styled-components
 
 ## Reconhecimento
 
